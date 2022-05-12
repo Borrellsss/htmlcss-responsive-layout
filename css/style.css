@@ -19,6 +19,7 @@
 .card {
     background-color: red;
 }
+
 /********************************************
                     COMMON
 ********************************************/
@@ -37,6 +38,11 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1070px;
+}
+
+.mid-container {
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .flex-container {
@@ -70,8 +76,9 @@ nav {
     padding-bottom: 3.5rem;
 }
 
-.demo .columns {
+.columns {
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .demo .col {
@@ -84,7 +91,17 @@ nav {
 }
 /* SECOND SECTION */
 .strategic {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: #9792e4;
+}
+
+.strategic .col:first-child {
+    margin-bottom: 2.5rem;
+}
+
+.strategic .col:last-child {
+    padding: 1rem;
 }
 
 /* THIRD SECTION */
@@ -104,6 +121,11 @@ nav {
                     FOOTER
 ********************************************/
 
+
+
+
+
+
 /********************************************
                     TABLET
 ********************************************/
@@ -112,10 +134,6 @@ nav {
                     MAIN
 ********************************************/
     /* FIRST SECTION */
-    .demo .columns {
-        justify-content: space-between;
-    }
-
     .demo .col {
         width: var(--demo-col);
     }
@@ -123,6 +141,12 @@ nav {
     .demo .col:first-child {
         width: calc( 100% - ( var(--demo-col) + 1.5rem ) );
     }
+
+    /* SECOND SECTION */
+    .strategic .col:last-child {
+        padding: 2rem;
+    }
+
 }
 
 /********************************************
@@ -138,5 +162,21 @@ nav {
 
     .hidden-menu {
         display: block;
+    }
+
+/********************************************
+                    MAIN
+********************************************/
+    /* SECOND SECTION */
+    .strategic .col {
+        width: calc( 50% - 1rem);
+    }
+
+    .strategic .col:first-child {
+        margin-bottom: 0;
+    }
+
+    .strategic .col:last-child {
+        align-self: flex-end;
     }
 }
