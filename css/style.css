@@ -40,7 +40,8 @@ body {
 }
 
 .small-screen {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .container {
@@ -78,8 +79,7 @@ nav {
 /********************************************
                     MAIN
 ********************************************/
-/* FIRST SECTION */
-.demo {
+section {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 }
@@ -89,6 +89,7 @@ nav {
     justify-content: space-between;
 }
 
+/* FIRST SECTION */
 .demo .col {
     margin-bottom: 1.5rem;
     padding: 2rem;
@@ -100,8 +101,6 @@ nav {
 
 /* SECOND SECTION */
 .strategic {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     background-color: #9792e4;
 }
 
@@ -114,11 +113,6 @@ nav {
 }
 
 /* THIRD SECTION */
-.expert-partners {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
 .row {
     margin-bottom: 2rem;
     padding: 1rem;
@@ -138,7 +132,15 @@ nav {
     background-color: #9792e4;
 }
 
+.benefits .col {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
 /* FIFTH SECTION */
+.about-us .col:first-child {
+    margin-bottom: 2rem;
+}
 
 /* SIXTH SECTION */
 .get-started {
@@ -190,6 +192,26 @@ nav {
     .row .col:last-child {
         width: 66%
     }
+
+    /* FOURTH SECTION */
+    .benefits .col {
+        width: calc( 50% - 1rem );
+    }
+
+    /* FIFTH SECTION */
+    .about-us .columns {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .about-us .col:first-child {
+        margin-bottom: 0;
+        width: 51%;
+    }
+
+    .about-us .col:last-child {
+        width: 40%;
+    }
 }
 
 /********************************************
@@ -222,4 +244,25 @@ nav {
     .strategic .col:last-child {
         align-self: flex-end;
     }
+
+    /* FOURTH SECTION */
+    .benefits .col {
+        margin-bottom: 1.5rem;
+        width: calc( ( 100% / 3 ) - 1rem );
+    }
+
+    /* FIFTH SECTION */
+    .about-us .columns {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .about-us .col:first-child {
+        width: 66%;
+    }
+
+    .about-us .col:last-child {
+        width: 27%;
+    }
+
 }
