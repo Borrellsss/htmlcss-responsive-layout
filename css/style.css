@@ -40,7 +40,7 @@ body {
 
 .small-container {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 380px;
 }
 
 .flex-container {
@@ -119,6 +119,7 @@ h4 {
 p {
     line-height: 2rem;
 }
+
 /********************************************
                     HEADER
 ********************************************/
@@ -360,7 +361,28 @@ section {
 
 /* SIXTH SECTION */
 .get-started {
+    text-align: center;
+    color: white;
     background-color: #9792e4;
+}
+
+.grey-span {
+    color: lightgray;
+}
+
+.free {
+    font-size: 4rem;
+    color: #fdc15f;
+}
+
+.get-started .btn-white {
+    margin: 2rem 0;
+    padding: 0.7em 3em;
+    font-size: 1.5rem;
+}
+
+.copyright span {
+    font-weight: bold;
 }
 
 /********************************************
@@ -439,10 +461,7 @@ footer {
 /********************************************
                     FOOTER
 ********************************************/
-    footer .small-container {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+
 }
 
 /********************************************
