@@ -47,6 +47,11 @@ body {
     display: flex;
 }
 
+.relative-container {
+    display: inline-block;
+    position: relative;
+}
+
 ul {
     list-style-type: none;
 }
@@ -81,9 +86,25 @@ img {
     display: block;
 }
 
+.expert-img {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.expert-img img {
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
 h2 {
     margin-bottom: 2rem;
     font-size: 2.2rem;
+}
+
+.h2-big {
+    font-size: 3rem;
 }
 
 h3 {
@@ -95,6 +116,9 @@ h4 {
     font-size: 1.3rem;
 }
 
+p {
+    line-height: 2rem;
+}
 /********************************************
                     HEADER
 ********************************************/
@@ -263,20 +287,7 @@ section {
     color: #9792e4;
 }
 
-.expert-img {
-    display: inline-block;
-    background-color: red;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.expert-img img {
-    max-width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.quotation {
+.expert-partners .quotation {
     margin: 0 0.2rem;
     font-size: 1.3rem;
 }
@@ -306,10 +317,6 @@ section {
     color: #9792e4;
 }
 
-.benefits .card > h2 {
-    font-size: 3rem;
-}
-
 .benefits .card > p {
     margin-bottom: 1.5rem;
 }
@@ -319,9 +326,36 @@ section {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 /* FIFTH SECTION */
 .about-us .col:first-child {
     margin-bottom: 2rem;
+}
+
+.about-us .card h2 {
+    color: #9792e4;
+}
+
+.about-us .h2-big + p {
+    margin-bottom: 2rem;
+}
+
+.about-us .col:last-child > .card {
+    color: #9792e4;
+}
+.about-us .relative-container {
+    margin-bottom: 1rem;
+}
+
+.about-us .quotation {
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-us .btn-violet {
+    padding: 0.5rem 1rem;
 }
 
 /* SIXTH SECTION */
@@ -395,6 +429,7 @@ footer {
     .about-us .col:first-child {
         margin-bottom: 0;
         width: 51%;
+        padding-bottom: 4rem;
     }
 
     .about-us .col:last-child {
@@ -471,10 +506,6 @@ footer {
         width: calc( ( 100% / 3 ) - 1rem );
     }
 
-    .benefits .card > h2 {
-        font-size: 4rem;
-    }
-
     /* FIFTH SECTION */
     .about-us .columns {
         padding-left: 2rem;
@@ -482,7 +513,7 @@ footer {
     }
 
     .about-us .col:first-child {
-        width: 66%;
+        width: 62%;
     }
 
     .about-us .col:last-child {
