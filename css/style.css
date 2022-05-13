@@ -67,6 +67,28 @@ body {
     display: flex;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 3em;
+}
+
+.btn-white {
+    color: #9792e4;;
+    background-color: white;
+}
+
+.btn-violet {
+    color: white;
+    background-color: #9792e4;
+}
 /********************************************
                     HEADER
 ********************************************/
@@ -83,8 +105,26 @@ nav {
     align-items: center;
 }
 
+.menu {
+    font-size: 2rem;
+}
+
 .hidden-menu {
     display: none;
+}
+
+.hidden-menu ul {
+    align-items: center;
+}
+
+.hidden-menu li {
+    margin-left: 2rem;
+}
+
+header .btn {
+    padding: 0.5em 0.9em;
+    font-size: 1.2rem;
+    color: black;
 }
 
 /********************************************
